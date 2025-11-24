@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
+
   console.log("Hello Rigo from the console!");
 
   const ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
@@ -41,7 +41,6 @@ function drawCard() {
 
   suitBig.textContent = suit.symbol;
 
-  // Cambiar color según palo
   const color = suit.color === "red" ? "text-danger" : "text-dark";
 
   rankTop.className = `fw-bold fs-3 ${color}`;
@@ -51,13 +50,10 @@ function drawCard() {
   suitBig.className = `display-1 ${color}`;
 }
 
-// Botón manual
 newCardBtn.addEventListener("click", drawCard);
 
-// Cambio automático cada 15 segundos
 setInterval(drawCard, 15000);
 
-// Mostrar una carta al cargar
 drawCard();
 
 };

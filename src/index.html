@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
+    <title>Cartas de Poker Aleatorias</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -18,34 +16,28 @@
 
 <body class="bg-success d-flex justify-content-center align-items-center vh-100 flex-column">
 
-  <!-- Carta -->
   <div id="playingCard" class="bg-white rounded shadow-lg position-relative mb-4"
        style="width: 240px; height: 340px;">
 
-    <!-- ESQUINA SUPERIOR -->
     <div class="position-absolute top-0 start-0 p-2 text-center">
       <div id="rankTop" class="fw-bold fs-3"></div>
       <div id="symbolTop" class="fs-3"></div>
     </div>
 
-    <!-- CENTRO -->
     <div class="position-absolute top-50 start-50 translate-middle">
       <div id="suitBig" class="fs-1 display-1"></div>
     </div>
 
-    <!-- ESQUINA INFERIOR ROTADA -->
     <div class="position-absolute bottom-0 end-0 p-2 text-center" style="transform: rotate(180deg);">
       <div id="rankBottom" class="fw-bold fs-3"></div>
       <div id="symbolBottom" class="fs-3"></div>
     </div>
   </div>
 
-  <!-- BOTÓN NUEVA CARTA -->
   <button id="newCardBtn" class="btn btn-light fw-bold shadow">
     Cambiar Carta
   </button>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
 </html>
